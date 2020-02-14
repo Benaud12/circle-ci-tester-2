@@ -41,6 +41,9 @@ jobs:
       - store_artifacts:
           path: /e2e/cypress/report
           destination: cypress-test-report
+    environment:
+      CYPRESS_baseUrl: https://www.apartmentwaltraud.com
+      CYPRESS_expected_content: Apartment Waltraud
   say_goodbye:
     executor: node
     steps:
